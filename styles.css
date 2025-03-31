@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: linear-gradient(135deg, #a28dff, #fff8b1, #a28dff);
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-weight:bolder;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    transition: background 0.5s ease-in-out;
+}
+header {
+    display: flex;
+    justify-content: space-between; /* Align content properly */
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #260d45, #0c0047);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+    border-bottom: 4px solid #ffffff;
+    text-transform: uppercase;
+    height: 100px;
+    position: relative; /* Ensure absolute positioning inside */
+}
+header h1 {
+    margin-left: 406px;
+
+    font-size: 3rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 4px 4px 20px rgba(255, 97, 97, 0.9);
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-buttons {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 15px;
+}
+.nav-buttons a {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #FF512F, #DD2476);
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.nav-buttons a:hover {
+    background: linear-gradient(135deg, #DD2476, #FF512F);
+    transform: scale(1.1);
+}
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, #FF512F, #DD2476);
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    z-index: 1100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.menu-button:hover {
+    background: linear-gradient(135deg, #DD2476, #FF512F);
+    transform: scale(1.1);
+}
+.dashboard {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    transition: 0.3s;
+    z-index: 1000;
+}
+.dashboard ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 15px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+li {
+    list-style: none;
+}
+.dashboard ul li a:hover {
+    background: #ffffff;
+    color: #DD2476;
+    border-radius: 70px;
+    padding: 10px;
+    transform: scale(1.05);
+}
+.dashboard.active {
+    left: 0;
+}
+h2 {
+    font-size: 28px;
+}
+h2:hover{
+    font-size: 30px;
+    color: #0c0047;
+}
+section {
+    padding: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+video {
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+.about, .contact {
+    background: rgba(255, 255, 255, 0.768);
+    font-weight: bolder;
+    padding: 50px;
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+#about > p, #contact > p {
+    color: black;
+    font-size: 20px;
+    font-weight: 100;
+}
+#about > p {
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#contact > p {
+    padding: 5px;
+}
+footer {
+    background: linear-gradient(135deg, #260d45, #0c0047);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+.footer-links a {
+    color: #DD2476;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.footer-links a:hover {
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

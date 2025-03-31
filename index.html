@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <button class="menu-button" onclick="toggleDashboard()">☰</button>
+    <div class="dashboard" id="dashboard">
+        <ul>
+            <br/>
+            <br/>
+            <br/>
+            <li><a href="#short">Short Videos</a></li>
+            <li><a href="#long">Long Videos</a></li>
+            <li><a href="#gaming">Gaming</a></li>
+            <li><a href="#football">Football Edits</a></li>
+            <li><a href="#ecommerce">E-Commerce Ads</a></li>
+            <li><a href="#documentary">Documentary Style</a></li>
+            <li><a href="#color">Color Grading</a></li>
+            <li><a href="#anime">Anime Videos</a></li>
+        </ul>
+    </div>
+    <header>
+        <h1>Editkaro</h1>
+        <div class="nav-buttons">
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+    <section id="short">
+        <h2>Short Videos</h2>
+        <video controls><source src="videos/short.mp4" type="video/mp4"></video>
+    </section>
+    <section id="long">
+        <h2>Long Videos</h2>
+        <video controls><source src="videos/long.mp4" type="video/mp4"></video>
+    </section>
+    <section id="gaming">
+        <h2>Gaming Videos</h2>
+        <video controls><source src="videos/gaming.mp4" type="video/mp4"></video>
+    </section>
+    <section id="football">
+        <h2>Football Edits</h2>
+        <video controls><source src="videos/football.mp4" type="video/mp4"></video>
+    </section>
+    <section id="ecommerce">
+        <h2>E-Commerce Ads</h2>
+        <video controls><source src="videos/ecommerce ad.mp4" type="video/mp4"></video>
+    </section>
+    <section id="documentary">
+        <h2>Documentary Style</h2>
+        <video controls><source src="videos/documentary.mp4" type="video/mp4"></video>
+    </section>
+    <section id="color">
+        <h2>Color Grading</h2>
+        <video controls><source src="videos/colour.mp4" type="video/mp4"></video>
+    </section>
+    <section id="anime">
+        <h2>Anime Videos</h2>
+        <video controls><source src="videos/anime.mp4" type="video/mp4"></video>
+    </section>
+    <section id="about" class="about">
+        <h2>About Us</h2><br/>
+        <p>Welcome to Editkaro, your one-stop solution for high-quality video editing services. 
+            Whether you’re a content creator, a business owner, or just someone looking to enhance your videos, 
+            we bring creativity and precision to every project.<br/><br/>
+
+            Our team of expert editors is dedicated to transforming raw footage into stunning, 
+            professional-quality videos that captivate audiences. We specialize in a wide range of editing styles, 
+            ensuring that your content stands out in the digital world.<br/><br/>
+            
+            At Editkaro, we believe that every video tells a story, and our job is to make that story unforgettable. 
+            With cutting-edge tools, seamless transitions, and professional-grade effects, we help bring your vision to life.</p>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact</h2><br/>
+        <p><strong>Email:</strong> contact@editkaro.com</p>
+        <p><strong>Phone:</strong> +123 456 7890</p>
+        <p>Follow us on social media for more updates!</p>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Editkaro. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        function toggleDashboard() {
+            const dashboard = document.getElementById('dashboard');
+            dashboard.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
